@@ -1,0 +1,42 @@
+# Flutter/Dart/Pub related
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+.flutter-plugins
+.flutter-plugins-dependencies
+.melos_tool/
+
+# Gradle
+.gradle/
+android/.gradle/
+
+# Build outputs (shared root and per-platform)
+build/
+android/build/
+android/app/build/
+ios/Flutter/ephemeral/
+macos/Flutter/ephemeral/
+linux/flutter/ephemeral/
+windows/flutter/ephemeral/
+web/.dart_tool/
+
+# iOS & macOS
+ios/.symlinks/
+ios/Pods/
+macos/Pods/
+
+# Android
+**/intermediates/
+**/outputs/
+**/*.keystore
+**/*.jks
+
+# IDEs
+.idea/
+.vscode/
+
+# Misc
+**/*.iml
+*.lock.h
+*.lock
