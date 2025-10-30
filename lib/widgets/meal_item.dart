@@ -5,9 +5,11 @@ import 'package:transparent_image/transparent_image.dart';
 
 class MealItem extends StatelessWidget {
   final Meal meal;
+  final void Function(Meal meal) onSelectMeal;
   const MealItem({
     super.key,
     required this.meal,
+    required this.onSelectMeal,
   });
 
   String get complexityText {
@@ -29,7 +31,9 @@ class MealItem extends StatelessWidget {
       elevation: 4,
       child: InkWell(
         borderRadius: BorderRadius.circular(12), // Match ripple to card shape
-        onTap: (){},
+        onTap: (){
+          onSelectMeal(meal);
+        },
         child: Stack(
           clipBehavior: Clip.hardEdge,
 
