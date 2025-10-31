@@ -22,3 +22,4 @@ final favouritesMealsProvider = StateNotifierProvider((ref){
   return FavouritesMealsNotifier();
 });
 
+
